@@ -7,53 +7,39 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
 // function Project() {
-const projects = [
-  {
-    name: "Board Game Tracker",
-    githubLink: "https://github.com/Ryan-Buckley1/Board-Game-Tracker",
-    deployedLink: "https://board-g4me-tracker.herokuapp.com/",
-    techs: [
-      "mysql",
-      "express",
-      "node",
-      "bootstrap",
-      "sequelize",
-      "cloudinary",
-      "handlebars.js",
-      "multer",
-    ],
-  },
-  {
-    name: "Dnd Character Creation",
-    githubLink: "https://github.com/Rdoolz51/DDCharacterCreation",
-    deployedLink: "https://rdoolz51.github.io/DDCharacterCreation/",
-    techs: ["HTML", "CSS", "JavaScript", "Materialize", "jQuery"],
-  },
-];
 
-export default function Project() {
+export default function Project(props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        {/* <CardMedia
-            component="img"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
-            alt="green iguana"
-          /> */}
+      <CardActionArea href={props.deployedLink}>
+        <CardMedia
+          component="img"
+          height="140"
+          image={props.picture}
+          alt={props.name}
+        />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {props.name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            {props.description}
+          </Typography>
+          <br />
+          <Typography variant="body1">Technologies used:</Typography>
+          <Typography variant="body2" color="text.secondary">
+            {props.techs.join(", ")}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
+        <Button
+          size="small"
+          color="secondary"
+          variant="contained"
+          href={props.githubLink}
+        >
+          Github
         </Button>
       </CardActions>
     </Card>
