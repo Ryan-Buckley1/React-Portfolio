@@ -8,7 +8,15 @@ import Project from "../Project";
 function Nav() {
   return (
     <>
-      <h1>Nav</h1>
+      <div className="navBar">
+        <a href="#about">About</a>
+
+        <a href="#project">Projects</a>
+
+        <a href="#resume">Resume</a>
+
+        <a href="#contact">Contact</a>
+      </div>
     </>
   );
 }

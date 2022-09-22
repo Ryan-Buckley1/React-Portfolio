@@ -3,7 +3,9 @@ import React from "react";
 function Resume() {
   return (
     <>
-      <h1>Resume</h1>;
+      <section id="resume">
+        <h1>Resume</h1>;
+      </section>
     </>
   );
 }

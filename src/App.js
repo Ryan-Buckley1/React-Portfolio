@@ -3,6 +3,8 @@ import About from "./components/About";
 // import "./App.css";
 import Title from "./components/Title";
 import Nav from "./components/Nav";
+import Contact from "./components/Contact";
+import Project from "./components/Project";
 
 function App() {
   return (
@@ -15,6 +17,12 @@ function App() {
       </div>
       <div>
         <About />
+      </div>
+      <div>
+        <Project />
+      </div>
+      <div>
+        <Contact />
       </div>
     </div>
   );

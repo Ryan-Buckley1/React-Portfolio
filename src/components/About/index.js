@@ -3,8 +3,8 @@ import React from "react";
 function About() {
   return (
     <>
-      <section>
-        <h1 className="about-title"> Ryan Buckley</h1>
+      <section id="about">
+        <h1 className="about-title"> Meet Ryan Buckley</h1>
         {/* <img className="profile-picture">Filler</img> */}
         <p className="about-body">
           I am an inspiring web developer that is looking to change my career
