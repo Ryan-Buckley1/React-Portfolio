@@ -16,7 +16,12 @@ function About() {
         <p className="about-family">
           I am a family man. I have two wonderful children and a fantastic wife
           who are my entire world. I do everything I can to provide for them and
-          feel like making this career change is exactly what I need to do
+          feel like making this career change is exactly what I need to do.
+        </p>
+        <p className="about-work">
+          I am currently enrolled in a coding bootcamp and look to graduate
+          soon. Some of my projects I have contributed to or completed myself
+          are on the projects page!
         </p>
       </section>
     </>
