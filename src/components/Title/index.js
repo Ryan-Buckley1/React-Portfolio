@@ -8,9 +8,11 @@ import Contact from "../Contact";
 function Title() {
   return (
     <>
-      <section>
-        <h1 className="my-name"> Ryan Buckley</h1>
-        <h3 className="subtitile">The Driven Driver</h3>
+      <section className="title-page">
+        <div className="title-text">
+          <h1 className="my-name"> Ryan Buckley</h1>
+          <h3 className="subtitile">The Driven Driver</h3>
+        </div>
         {/* Title Picture Filler  */}
       </section>
     </>

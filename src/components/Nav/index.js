@@ -1,21 +1,38 @@
 import React from "react";
-
-import Contact from "../Contact";
-import About from "../About";
-import Resume from "../Resume";
-import Project from "../Project";
-
+import Tooltip from "@mui/material/Tooltip";
+import AssignmentIcon from "@mui/icons-material/Assignment";
+import CampaignIcon from "@mui/icons-material/Campaign";
+import HikingIcon from "@mui/icons-material/Hiking";
+import LaptopIcon from "@mui/icons-material/Laptop";
+import { indigo } from "@mui/material/colors";
 function Nav() {
+  const primary = indigo[100];
   return (
     <>
       <div className="navBar">
-        <a href="#about">About</a>
+        <Tooltip title="About" placement="bottom">
+          <a href="#about">
+            <HikingIcon color="info" fontSize="large" />
+          </a>
+        </Tooltip>
 
-        <a href="#project">Projects</a>
+        <Tooltip title="Projects" placement="bottom">
+          <a href="#project">
+            <LaptopIcon color="info" fontSize="large" />
+          </a>
+        </Tooltip>
 
-        <a href="#resume">Resume</a>
+        <Tooltip title="Resume" placement="bottom">
+          <a href="#resume">
+            <AssignmentIcon color="info" fontSize="large" />
+          </a>
+        </Tooltip>
 
-        <a href="#contact">Contact</a>
+        <Tooltip title="Contact" placement="bottom">
+          <a href="#contact">
+            <CampaignIcon color="info" fontSize="large" />
+          </a>
+        </Tooltip>
       </div>
     </>
   );

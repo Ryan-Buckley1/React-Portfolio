@@ -1,22 +1,36 @@
 import React from "react";
 import Mail from "@mui/icons-material/Mail";
 import Tooltip from "@mui/material/Tooltip";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function Contact() {
   return (
     <>
       <section id="contact">
         <h1>Get ahold of me!</h1>
         <p>
-          If you would like to contact me, my GitHub and email are provided!
+          If you would like to contact me, my GitHub, LinkedIn and Email are
+          provided below!
         </p>
-        <ul>
+        <ul className="contact-links">
           <li>
-            <a href="https://github.com/Ryan-Buckley1">GitHub</a>
+            <Tooltip title="GitHub" placement="top">
+              <a href="https://github.com/Ryan-Buckley1">
+                <GitHubIcon color="info" fontSize="large" />
+              </a>
+            </Tooltip>
           </li>
           <li>
-            <Tooltip title="email">
+            <Tooltip title="Email" placement="top">
               <a href="mailto:Ryan42buck@gmail.com">
-                <Mail color="disabled" fontSize="large" />
+                <Mail color="info" fontSize="large" />
+              </a>
+            </Tooltip>
+          </li>
+          <li>
+            <Tooltip title="LinkedIn" placement="top">
+              <a href="https://www.linkedin.com/in/ryanbuckley42">
+                <LinkedInIcon color="info" fontSize="large" />
               </a>
             </Tooltip>
           </li>

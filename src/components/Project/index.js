@@ -10,7 +10,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 
 export default function Project(props) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="card">
       <CardActionArea href={props.deployedLink}>
         <CardMedia
           component="img"
