@@ -1,6 +1,11 @@
-html {
+body {
     background: linear-gradient(0deg, rgba(72,61,139,1) 0%, rgba(0,0,0,1) 42%);
+    background-size: 100% 100vw;
+}
+
+html {
     color: ivory;
+
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -69,4 +74,6 @@ font-style: oblique;
 
 .card {
     opacity: .7;
+    margin-bottom: 5%;
+    border: 2px solid black;
 }
