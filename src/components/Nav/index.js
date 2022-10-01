@@ -4,6 +4,7 @@ import AssignmentIcon from "@mui/icons-material/Assignment";
 import CampaignIcon from "@mui/icons-material/Campaign";
 import HikingIcon from "@mui/icons-material/Hiking";
 import LaptopIcon from "@mui/icons-material/Laptop";
+import CottageIcon from "@mui/icons-material/Cottage";
 
 // TODO: ADD HOME ICON AND PUT IT IN FIRST NAVBAR OPTION
 
@@ -12,9 +13,13 @@ function Nav({ currentComponent, handleComponentChange }) {
     <>
       <div className="navBar">
         <Tooltip title="Home" placement="bottom">
-          <a href="#contact" onClick={() => handleComponentChange("Title")}>
-            <CampaignIcon
-              color={currentComponent === "Home" ? "error" : "info"}
+          <a
+            href="#contact"
+            className="icon"
+            onClick={() => handleComponentChange("Title")}
+          >
+            <CottageIcon
+              color={currentComponent === "Title" ? "error" : "info"}
               fontSize="large"
             />
           </a>
@@ -31,7 +36,7 @@ function Nav({ currentComponent, handleComponentChange }) {
         <Tooltip title="Projects" placement="bottom">
           <a href="#project" onClick={() => handleComponentChange("Project")}>
             <LaptopIcon
-              color={currentComponent === "Projects" ? "error" : "info"}
+              color={currentComponent === "Project" ? "error" : "info"}
               fontSize="large"
             />
           </a>

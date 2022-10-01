@@ -14,7 +14,11 @@ function About() {
           alignItems="center"
         >
           <Grid item md className="family-pic col-6">
-            <img className="profile-picture" src={famPic} />
+            <img
+              className="profile-picture"
+              src={famPic}
+              alt="Buckley Family"
+            />
           </Grid>
           <Grid item md className="about-text col-6">
             <p className="about-life ">

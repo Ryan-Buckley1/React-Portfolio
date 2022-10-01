@@ -17,29 +17,44 @@ export default function Project({ props }) {
         <h1>Projects</h1>
         <Grid
           container
+          spacing={2}
           justifyContent="space-evenly"
           alignContent="space-evenly"
         >
           {props.map((project) => (
-            <Grid item xs="8" md="4" lg="6">
+            <Grid item lg={4} md={6} key={project.name}>
               <Card className="card" sx={{ maxWidth: 345 }}>
-                <CardActionArea href={project.deployedLink}>
+                <CardActionArea key={project.name} href={project.deployedLink}>
                   <CardMedia
+                    key={project.name}
                     component="img"
                     height="140"
                     image={project.picture}
                     alt={project.name}
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      key={project.name}
+                    >
                       {project.name}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      key={project.description}
+                    >
                       {project.description}
                     </Typography>
                     <br />
                     <Typography variant="body1">Technologies used:</Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      key={project.techs}
+                    >
                       {project.techs.join(", ")}
                     </Typography>
                   </CardContent>
@@ -50,6 +65,7 @@ export default function Project({ props }) {
                     color="secondary"
                     variant="contained"
                     href={project.githubLink}
+                    key={project.githubLink}
                   >
                     Github
                   </Button>

@@ -6,6 +6,7 @@ import Nav from "../Nav";
 import Contact from "../Contact";
 import Project from "../Project";
 import Resume from "../Resume";
+import Footer from "../Footer";
 
 import boardgametrackerpic from "../../assets/images/boardgametracker.png";
 import dndPic from "../../assets/images/dndCC.png";
@@ -67,7 +68,7 @@ function Main() {
         handleComponentChange={(component) => setCurrentComponent(component)}
       />
       {renderComponent()}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
