@@ -6,7 +6,7 @@ import ButtonUnstyled, {
 } from "@mui/base/ButtonUnstyled";
 import { styled } from "@mui/material/styles";
 import { TextField } from "@mui/material";
-
+//Contact form for users to be able to send information to me. The form is sent to my email via emailjs
 function Contact() {
   const [formState, setFormState] = useState({
     name: "",
@@ -35,7 +35,7 @@ function Contact() {
       console.log("Handle Form", formState);
     }
   };
-
+  //styled the input fields to make them a little more fun
   const InputTextField = styled(TextField)({
     "& label.Mui-focused": {
       color: "ivory",
@@ -55,7 +55,7 @@ function Contact() {
       },
     },
   });
-
+  //changed some of the colors to make it easier to read
   const purple = {
     500: "rgba(170, 124, 212, 0.582)",
     600: "rgba(158, 84, 226, 0.582)",

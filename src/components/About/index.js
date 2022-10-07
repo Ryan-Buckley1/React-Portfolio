@@ -2,6 +2,7 @@ import React from "react";
 import famPic from "../../assets/images/Family-photo.jpg";
 import Grid from "@mui/material/Grid";
 
+//About component using Grid from mui
 function About() {
   return (
     <>

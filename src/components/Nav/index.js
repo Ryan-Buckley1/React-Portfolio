@@ -6,8 +6,7 @@ import HikingIcon from "@mui/icons-material/Hiking";
 import LaptopIcon from "@mui/icons-material/Laptop";
 import CottageIcon from "@mui/icons-material/Cottage";
 
-// TODO: ADD HOME ICON AND PUT IT IN FIRST NAVBAR OPTION
-
+//Navbar with icons and tooltips to allow user to change what component is currently in view
 function Nav({ currentComponent, handleComponentChange }) {
   return (
     <>

@@ -8,9 +8,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
+//gets props from main to fill out project component
 export default function Project({ props }) {
-  console.log(props);
-
   return (
     <>
       <Container maxWidth="md" className="content">
@@ -21,6 +20,7 @@ export default function Project({ props }) {
           justifyContent="space-evenly"
           alignContent="space-evenly"
         >
+          {/* maps over each project in the projects array */}
           {props.map((project) => (
             <Grid item lg={4} md={6} key={project.name}>
               <Card className="card" sx={{ maxWidth: 345 }}>
@@ -78,5 +78,3 @@ export default function Project({ props }) {
     </>
   );
 }
-
-// export default Project;

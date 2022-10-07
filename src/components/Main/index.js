@@ -12,7 +12,9 @@ import boardgametrackerpic from "../../assets/images/boardgametracker.png";
 import dndPic from "../../assets/images/dndCC.png";
 
 function Main() {
+  //finds the state of which component to use
   const [currentComponent, setCurrentComponent] = useState("Title");
+  //project information
   const [projects] = useState([
     {
       name: "Board Game Tracker",
@@ -40,7 +42,7 @@ function Main() {
       techs: ["HTML", "CSS", "JavaScript", "Materialize", "jQuery"],
     },
   ]);
-
+  //renders the current state set component
   const renderComponent = () => {
     if (currentComponent === "Title") {
       return <Title />;

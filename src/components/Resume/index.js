@@ -1,5 +1,6 @@
 import React from "react";
 
+//link to my resume and displays my proficiencies
 function Resume() {
   return (
     <>

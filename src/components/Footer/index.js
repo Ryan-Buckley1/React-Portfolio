@@ -3,6 +3,8 @@ import Mail from "@mui/icons-material/Mail";
 import Tooltip from "@mui/material/Tooltip";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+//created a footer with icons that have tooltips to tell the user what the icons represent
 function Footer() {
   return (
     <>
