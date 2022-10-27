@@ -10,12 +10,32 @@ import Footer from "../Footer";
 
 import boardgametrackerpic from "../../assets/images/boardgametracker.png";
 import dndPic from "../../assets/images/dndCC.png";
+import isItHereYetPic from "../../assets/images/is-it-here-yet.png";
 
 function Main() {
   //finds the state of which component to use
   const [currentComponent, setCurrentComponent] = useState("Title");
   //project information
   const [projects] = useState([
+    {
+      name: "Is It Here Yet",
+      description:
+        "A way for users to manage their tracking numbers from USPS, Fedex, and UPS. ",
+      picture: isItHereYetPic,
+      githubLink: "https://github.com/Ryan-Buckley1/is-it-here-yet",
+      deployedLink: "https://is-it-here-yet.herokuapp.com/",
+      techs: [
+        "React",
+        "CSS",
+        "JavaScript",
+        "Material UI",
+        "Puppeteer",
+        "Graphql",
+        "Apollo",
+        "Express",
+        "JSON Web Token",
+      ],
+    },
     {
       name: "Board Game Tracker",
       description: "A way to orgainize all of your board games!",
